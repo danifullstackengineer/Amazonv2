@@ -7,6 +7,12 @@ import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import router from "./router.js";
 dotenv.config();
+import Stripe from "stripe";
+const stripe = new Stripe(
+  "sk_test_51KXAUxDelfvIQhggaHx7kWBTL4V1NcpOGGFn5B1hYtr532C79ROi6MCyRXFcIoQY2zv0gcuK2yN18MH1a1OhivdC00OcKIrKRI"
+);
+
+export {stripe}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

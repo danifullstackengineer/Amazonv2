@@ -1,0 +1,1 @@
+export const header__logo = "http://pngimg.com/uploads/amazon/amazon_PNG11.png";
