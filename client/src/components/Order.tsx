@@ -27,7 +27,7 @@ function Order({ order }: { order: IOrder["orders"][0] }) {
         );
       })}
       <CurrencyFormat
-        renderText={(value) => <h3>Order Total: {value}</h3>}
+        renderText={(value:any) => <h3>Order Total: {value}</h3>}
         decimalScale={2}
         value={order.amount / 100}
         displayType={"text"}

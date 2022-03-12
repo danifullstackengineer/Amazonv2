@@ -139,7 +139,7 @@ function Payment() {
               <CardElement onChange={handleChange} />
               <div className="payment__priceContainer">
                 <CurrencyFormat
-                  renderText={(value) => {
+                  renderText={(value:any) => {
                     return <h3>Order Total: {value}</h3>;
                   }}
                   decimalScale={2}
